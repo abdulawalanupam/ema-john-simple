@@ -3,10 +3,12 @@
   margin: 25px 0;
   padding: 5px;
   border-radius: 10px;
+  border: 1px solid #d3d3d300;
   box-shadow: 1px 1px 15px lightgray;
   transition: 0.3s;
 }
 .product:hover {
+  border-color: #ff99007c;
   box-shadow: 1px 1px 15px #ff99007c;
 }
 .product img {

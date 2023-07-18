@@ -1,4 +1,6 @@
 import React from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faCheckCircle } from "@fortawesome/free-solid-svg-icons";
 import "./Cart.css";
 
 const Cart = (props) => {
@@ -30,7 +32,7 @@ const Cart = (props) => {
   const grandTotal = fixedNumberLength(total + shipping + tax);
 
   return (
-    <div>
+    <div className="cartBox">
       <h3>Order Summary</h3>
       <p>Items Ordered: {cart.length}</p>
       {/* <p>Total Price: {totalPrice}</p> */}
@@ -41,7 +43,10 @@ const Cart = (props) => {
       <p>
         <small>Tax + VAT: {tax}</small>
       </p>
-      <p>Total Price: {grandTotal}</p>
+      <p id="gTotal">Total Price: {grandTotal}</p>
+      <button>
+        <FontAwesomeIcon icon={faCheckCircle} /> Checkout
+      </button>
     </div>
   );
 };

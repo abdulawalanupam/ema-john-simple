@@ -1,0 +1,48 @@
+.cartBox {
+  padding: 20px 40px 40px 40px;
+  margin-top: 25px;
+  border: 1px solid #d3d3d300;
+  border-radius: 10px;
+  box-shadow: 5px 5px 12px lightgray;
+  transition: 0.3s;
+}
+.cartBox:hover {
+  border-color: #ff99007c;
+  box-shadow: 1px 1px 15px #ff99007c;
+}
+.cartBox h3 {
+  text-transform: uppercase;
+  text-decoration: underline overline;
+  text-decoration-thickness: 3px;
+  text-underline-offset: 7px;
+  color: #ff8800;
+  font-size: 19px;
+  font-weight: 800;
+}
+.cartBox p {
+  margin: 0 0 3px 0;
+}
+
+.cartBox #gTotal {
+  font-size: 18px;
+  font-weight: bold;
+  color: #3d3d3d;
+  margin-top: 15px;
+}
+
+.cartBox button {
+  background-color: #3d3d3d;
+  color: white;
+  width: 150px;
+  margin: 30px 0 0 0;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+.cartBox button:hover {
+  background-color: #ff9800;
+  color: #3d3d3d;
+  cursor: pointer;
+}
