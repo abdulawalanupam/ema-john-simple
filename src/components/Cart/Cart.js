@@ -32,7 +32,7 @@ const Cart = (props) => {
   const grandTotal = fixedNumberLength(total + shipping + tax);
 
   return (
-    <div className="cartBox">
+    <div className="cartBox pt-5">
       <h3>Order Summary</h3>
       <p>Items Ordered: {cart.length}</p>
       {/* <p>Total Price: {totalPrice}</p> */}
