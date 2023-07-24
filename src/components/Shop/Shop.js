@@ -3,6 +3,7 @@ import "./Shop.css";
 import fakeData from "../../fakeData";
 import Product from "../Product/Product";
 import Cart from "../Cart/Cart";
+import { addToDatabaseCart } from "../../utilities/databaseManager";
 
 const Shop = () => {
   const first10 = fakeData.slice(0, 10);
@@ -12,6 +13,7 @@ const Shop = () => {
   const handleAddProductBtn = (productCartBtn) => {
     const newCart = [...cart, productCartBtn];
     setCart(newCart);
+    addToDatabaseCart(products.key, 1);
   };
 
   return (
